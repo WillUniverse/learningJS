@@ -1,0 +1,2 @@
+DOM - Document Object Model
+Tipos de variáveis: String, number, boolean.
