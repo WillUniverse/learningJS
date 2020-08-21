@@ -9,7 +9,7 @@
     <script>
         //Entrada de dados
         var nome = prompt('Digite seu nome:')
-        var altura = prompt('Digite sua altura em centímetros')
+        var altura = prompt('Digite sua altura em centímetros:')
         var peso = prompt('Digite o seu peso:')
 
         //Convertendo dados para tipo float
@@ -24,21 +24,21 @@
 
         //Classificando faixas
         if (M<16){
-            classificacao ='Baixo peso muito grave'
+            classificacao ='Baixo peso muito grave.'
         }else if (M>16 && M<16.99){
-            classificacao ='Baixo peso grave'
+            classificacao ='Baixo peso grave.'
         }else if (M>17 && M<18.49){
-            classificacao ='Baixo peso'
+            classificacao ='Baixo peso.'
         }else if (M>18.5 && M<24.99){
-            classificacao ='Peso normal'
+            classificacao ='Peso normal.'
         }else if (M>25 && M<29.99){
-            classificacao ='Sobrepeso'
+            classificacao ='Sobrepeso.'
         }else if (M>30 && M<34.99){
-            classificacao ='Obesidade grau I'
+            classificacao ='Obesidade grau I.'
         }else if (M>35 && M<39.99){
-            classificacao ='Obesidade grau II'
+            classificacao ='Obesidade grau II.'
         }else if (M>40){
-            classificacao ='Obesidade grau III'
+            classificacao ='Obesidade grau III.'
         }
 
         document.write(nome + ' possui índice de massa corporal igua a ' + M + ', sendo classificado como: '+ classificacao)
