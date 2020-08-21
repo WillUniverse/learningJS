@@ -1,2 +1,3 @@
 DOM - Document Object Model
 Tipos de variáveis: String, number, boolean.
+Operadores aritméticos(7): +  - * / % ++ --
