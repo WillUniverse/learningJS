@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+        function acao1(){
+            alert('Evento disparado.')
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Pressionar a tecla -->
+    <input onkeydown="acao1()" type="text">
+    <!-- Ao soltar a tecla -->
+    <input onkeyup="acao1()" type="text">
+    <!-- Ao apertar, só se for caracter -->
+    <input onkeypress="acao1()" type="text">
+
+</body>
+
+</html>

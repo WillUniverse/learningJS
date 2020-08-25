@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        function focoInput(corBackground) {
+            document.getElementById('retangulo').style.backgroundColor = corBackground
+        }
+
+        function desfocoInput(corRed, corGreen) {
+            var caracterDigitados = document.getElementById('retangulo').value
+            document.getElementById('saida').value = caracterDigitados
+
+            qntdCaracteres = document.getElementById('retangulo').value.length
+
+            if (qntdCaracteres < 3) {
+                document.getElementById('retangulo').style.backgroundColor = corRed
+            } else if (qntdCaracteres >= 3) {
+                document.getElementById('retangulo').style.backgroundColor = corGreen
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <span>Entradas:</span>
+    <input type="text" onfocus="focoInput('#FFFF00')" onblur="desfocoInput('#FF0000', '#008000')" id="retangulo">
+
+    <hr>
+    <span>Recuperando valores:</span>
+    <input type="text" disabled="disabled" id="saida">
+
+</body>
+
+</html>

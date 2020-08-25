@@ -1,4 +1,6 @@
 DOM - Document Object Model
+API que permite o acesso via JavaScript aos elementos da página.
+
 Tipos de variáveis: String, number, boolean.
 Operadores aritméticos(7): +  - * / % ++ --
 

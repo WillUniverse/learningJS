@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+       function acao(){
+           alert('Evento disparado.')
+       }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- 1click -->
+    <div onclick="acao()" style="background: #ccc;height: 150px; width: 150px;float: left;">1 Click</div>
+    <!-- 2clicks -->
+    <div ondblclick="acao()" style="background:red;height: 150px; width: 150px;float: left;">2 Cicks</div>
+    <!-- Sobrepor o mouse na região -->
+    <div onmouseover="acao()" style="background:green;height: 150px; width: 150px;float: left;">Sobrepor o mouse</div>
+    <!-- Quando o mouse sai da região -->
+    <div onmouseout="acao()" style="background:yellow;height: 150px; width: 150px;float: left;">Sair o mouse</div>
+</body>
+
+</html>
