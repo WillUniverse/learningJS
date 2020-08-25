@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        // var y =setTimeout(function(){
+        //     document.write('Teste')
+        // }, 2000)
+        // clearTimeout(y)
+        var i = 5
+
+        var x = setInterval(function () {
+            document.write(i + '<br>')
+            i--
+            if(i === 0){
+                // window.location.reload()
+                clearInterval(x)
+            }
+        }, 1000)
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
