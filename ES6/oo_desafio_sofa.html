@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+        class Sofa {
+            //atributos
+            constructor(cor, qtde_lugares, reclinavel) {
+                this.cor = cor
+                this.qtde_lugares = qtde_lugares
+                this.reclinavel = reclinavel
+            }
+
+            //métodos
+            reclinar() {
+                if (this.reclinavel === true) {
+                    console.log('O sofá é reclinável')
+                } else {
+                    console.log('O sofá não é reclinável')
+                }
+            }
+        }
+
+        let sofa = Array()
+
+        sofa.push(new Sofa('verde', 4, true))
+        sofa.push(new Sofa('Amarelo', 2, false))
+
+        console.log(sofa)
+        
+        sofa[0].reclinar()
+        sofa[1].reclinar()
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

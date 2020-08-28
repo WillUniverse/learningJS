@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        let produto = {
+            descricao: 'Notebook',
+            preco: 1800,
+            //tem um
+            detalhes: {
+                fabricante: 'abc',
+                modelo: 'xyz'
+            }
+        }
+        //token -> Array => [] and Object => {}
+        // let {descricao, preco} = produto
+
+        // let {descricao: d, preco: p , desconto = 5} = produto
+
+        let{detalhes: {fabricante: f,modelo: m}} = produto
+        console.log(f, m)
+
+    </script>
+
+
+<body>
+
+</body>
+
+</html>

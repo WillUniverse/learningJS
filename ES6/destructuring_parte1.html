@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+        //Operação de desestruturação
+        // let [a, b, ,c] = frutas //pular um índice
+
+        let [ a, b = 'Abacate', c, d, e = 'Banana'] = frutas
+        // console.log(a, b, c, d, e)
+
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']]
+        let [ , [ , n2]] = coisas
+        let[[ , , pera]] = coisas
+
+        console.log(n2)
+        console.log(pera)
+
+    </script>
+
+
+<body>
+
+</body>
+
+</html>
